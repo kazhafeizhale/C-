@@ -9,6 +9,11 @@
 <p><strong>Index</strong></p>
 <p><a href="目录.html">目录</a></p>
 
+<p><a href="其他.html">其他</a></p>
+
+<ol>
+<li><a href="其他--github中创建文章.html">github中创建文章</a></li>
+</ol>
 <p><a href="基本语法.html">基本语法</a></p>
 
 <ol>
@@ -106,6 +111,7 @@
 <ol>
 <li><a href="基本语法--typeid--static_cast_dynamic_cast.html">static cast dynamic cast </a></li>
 </ol>
+<li><a href="基本语法--引用.html">引用</a></li>
 </ol>
 <p><a href="算法.html">算法</a></p>
 
@@ -144,11 +150,11 @@
 <ol>
 <li><a href="window--mfc--编辑框--追加文本.html">追加文本</a></li>
 </ol>
+<li><a href="window--mfc--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
+<li><a href="window--mfc--视图分割.html">视图分割</a></li>
+<li><a href="window--mfc--编码方式.html">编码方式</a></li>
+<li><a href="window--mfc--socket.html">socket</a></li>
 </ol>
-<li><a href="window--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
-<li><a href="window--视图分割.html">视图分割</a></li>
-<li><a href="window--编码方式.html">编码方式</a></li>
-<li><a href="window--socket.html">socket</a></li>
 </ol>
 <p><a href="算法题目.html">算法题目</a></p>
 
@@ -168,6 +174,8 @@
 </ol>
 <p><a href="异常处理.html">异常处理</a></p>
 
-</div>
+<ol>
+<li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
+</ol></div>
 <div class="page"><h1><b><u>单项有序链表</u></b></h1><br /><img src="images\29-1.png" alt="images\29-1.png" /><br /><br />代码：<br /><div class="codebox"><div class="codebox"><span style="color:#ff9d00;font-weight:700">typedef</span>&nbsp;<span style="color:#ff9d00;font-weight:700">struct</span>&nbsp;node<br />{<br />	<span style="color:#ff9d00;font-weight:700">struct</span>&nbsp;node&nbsp;&nbsp;*link;<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;date;<br />}NODE_STRUCT;</div></div><br />第三行需要用：struct xxx定义<br /><br />插入函数：<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">int</span>&nbsp;insert_node(NODE_STRUCT&nbsp;**linkp,<span style="color:#7f0044;font-weight:400">int</span>&nbsp;newdate)<br />{<br />	NODE_STRUCT&nbsp;*current;<br />	NODE_STRUCT&nbsp;*newnode;<br /><br />	<span style="color:#ff9d00;font-weight:700">while</span>&nbsp;((current=*linkp)!=<span style="color:#0088ff;font-weight:700">NULL</span>&nbsp;&amp;&amp;&nbsp;current-&gt;date&nbsp;&lt;&nbsp;newdate)<br />	{<br />		linkp&nbsp;=&nbsp;&amp;(current-&gt;link);<br />	}<br />	<br />	newnode&nbsp;=&nbsp;(NODE_STRUCT&nbsp;*)malloc(<span style="color:#ff9d00;font-weight:700">sizeof</span>(NODE_STRUCT));<br />	newnode-&gt;date&nbsp;=&nbsp;newdate;<br /><br />	newnode-&gt;link&nbsp;=&nbsp;current;<br /><br />	*linkp&nbsp;=&nbsp;newnode;<br />	<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;<span style="color:#ff0044;font-weight:400">1</span>;<br />}</div></div><br /><br /><br />测试遍历函数<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">int</span>&nbsp;main()<br />{<br />	<span style="color:#0088ff;font-weight:400">//操作</span><br />	NODE_STRUCT&nbsp;*root&nbsp;=&nbsp;<span style="color:#0088ff;font-weight:700">NULL</span>;<br />	insert_node(&amp;root,&nbsp;<span style="color:#ff0044;font-weight:400">10</span>);<br />	insert_node(&amp;root,&nbsp;<span style="color:#ff0044;font-weight:400">5</span>);<br />	insert_node(&amp;root,&nbsp;<span style="color:#ff0044;font-weight:400">4</span>);<br />	insert_node(&amp;root,&nbsp;<span style="color:#ff0044;font-weight:400">50</span>);<br />	insert_node(&amp;root,&nbsp;<span style="color:#ff0044;font-weight:400">3</span>);<br />	insert_node(&amp;root,&nbsp;<span style="color:#ff0044;font-weight:400">3</span>);<br /><br />	NODE_STRUCT&nbsp;*&nbsp;current;<br />	<span style="color:#ff9d00;font-weight:700">for</span>(current&nbsp;=&nbsp;root;current&nbsp;!=&nbsp;<span style="color:#0088ff;font-weight:700">NULL</span>;&nbsp;current&nbsp;=&nbsp;current-&gt;link)<br />	{<br />		printf(<span style="color:#3ad900;font-weight:400">"single&nbsp;value&nbsp;is&nbsp;%d&nbsp;\n"</span>,current-&gt;date);<br /><br />	}<br />}</div></div><br /><br />查找函数<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">int</span>&nbsp;find_node(NODE_STRUCT&nbsp;**linkp,&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;find_date)<br />{<br />	<span style="color:#7f0044;font-weight:400">unsigned</span>&nbsp;num&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;<br />	NODE_STRUCT&nbsp;*current;<br />	<br />	<span style="color:#ff9d00;font-weight:700">while</span>&nbsp;((current&nbsp;=&nbsp;*linkp)&nbsp;!=&nbsp;<span style="color:#0088ff;font-weight:700">NULL</span>)<br />	{<br />		<span style="color:#ff9d00;font-weight:700">if</span>&nbsp;(current-&gt;date&nbsp;==&nbsp;find_date)<br />		{<br />			num++;<br />		}<br />		linkp&nbsp;=&nbsp;&amp;(current-&gt;link);<br />	}<br />	<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;num;<br />}</div></div><br /><br /><br /><br /></div></div>
 </body></html>

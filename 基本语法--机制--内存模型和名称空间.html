@@ -9,6 +9,11 @@
 <p><strong>Index</strong></p>
 <p><a href="目录.html">目录</a></p>
 
+<p><a href="其他.html">其他</a></p>
+
+<ol>
+<li><a href="其他--github中创建文章.html">github中创建文章</a></li>
+</ol>
 <p><a href="基本语法.html">基本语法</a></p>
 
 <ol>
@@ -106,6 +111,7 @@
 <ol>
 <li><a href="基本语法--typeid--static_cast_dynamic_cast.html">static cast dynamic cast </a></li>
 </ol>
+<li><a href="基本语法--引用.html">引用</a></li>
 </ol>
 <p><a href="算法.html">算法</a></p>
 
@@ -144,11 +150,11 @@
 <ol>
 <li><a href="window--mfc--编辑框--追加文本.html">追加文本</a></li>
 </ol>
+<li><a href="window--mfc--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
+<li><a href="window--mfc--视图分割.html">视图分割</a></li>
+<li><a href="window--mfc--编码方式.html">编码方式</a></li>
+<li><a href="window--mfc--socket.html">socket</a></li>
 </ol>
-<li><a href="window--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
-<li><a href="window--视图分割.html">视图分割</a></li>
-<li><a href="window--编码方式.html">编码方式</a></li>
-<li><a href="window--socket.html">socket</a></li>
 </ol>
 <p><a href="算法题目.html">算法题目</a></p>
 
@@ -168,6 +174,8 @@
 </ol>
 <p><a href="异常处理.html">异常处理</a></p>
 
-</div>
+<ol>
+<li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
+</ol></div>
 <div class="page"><h1><b><u>内存模型和名称空间</u></b></h1>内存模型<br /><a href="https://www.cnblogs.com/rednodel/p/9300729.html">https://www.cnblogs.com/rednodel/p/9300729.html</a><br /><br />const:<br />    const a:<br />        声明变量a为常量，不可改变，默认具有static的性质，链接性为内部，因此可以放到头文件中。<br />    extern const a:<br />        使a具有外部链接性。                <br /><br /><br />名称空间：<br />    把标识符的声明放到特定的空间中，<br />    把全局作用域分为了层级关系，可以嵌套使用<br />    可以随时增加。<br />    <br />    和全局作用域和局部作用域的关系和以前保持一致。<br />    <br />    <div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:700">#include&nbsp;&lt;iostream&gt;</span><br /><span style="color:#7f0044;font-weight:700">#include&nbsp;"file1.h"</span><br /><span style="color:#7f0044;font-weight:700">#include&nbsp;"file2.h"</span><br /><span style="color:#ff9d00;font-weight:700">using</span>&nbsp;<span style="color:#ff9d00;font-weight:700">namespace</span>&nbsp;std;<br /><span style="color:#ff9d00;font-weight:700">namespace</span>&nbsp;hetong<br />{<br />	<span style="color:#ff9d00;font-weight:700">namespace</span>&nbsp;heliang1<br />	{<br />		<span style="color:#7f0044;font-weight:400">int</span>&nbsp;a;<br />		<span style="color:#7f0044;font-weight:400">void</span>&nbsp;func1(<span style="color:#7f0044;font-weight:400">void</span>)<br />		{<br />			cout&lt;&lt;<span style="color:#3ad900;font-weight:400">"ok\n"</span>;<br />		}<br />	}<br />}<br /><span style="color:#ff9d00;font-weight:700">namespace</span>&nbsp;heliang<br />{<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;a;<br />	<span style="color:#7f0044;font-weight:400">void</span>&nbsp;func1(<span style="color:#7f0044;font-weight:400">void</span>)<br />	{<br />		cout&lt;&lt;<span style="color:#3ad900;font-weight:400">"lala\n"</span>;<br />	}<br />}<br /><span style="color:#7f0044;font-weight:400">int</span>&nbsp;main&nbsp;(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;argc,&nbsp;<span style="color:#7f0044;font-weight:400">char</span>&nbsp;*argv[])<br />{<br />	<span style="color:#ff9d00;font-weight:700">using</span>&nbsp;<span style="color:#ff9d00;font-weight:700">namespace</span>&nbsp;hetong::heliang1;<br />	<span style="color:#ff9d00;font-weight:700">using</span>&nbsp;<span style="color:#ff9d00;font-weight:700">namespace</span>&nbsp;heliang;<br />	cout&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"hello&nbsp;world"</span>&nbsp;&lt;&lt;&nbsp;endl;<br />	<span style="color:#0088ff;font-weight:400">//hetong::heliang1::func1();</span><br />	<span style="color:#0088ff;font-weight:400">//func1();</span><br />	<span style="color:#ff9d00;font-weight:700">return</span>(<span style="color:#ff0044;font-weight:400">0</span>);<br />}<br /><br /></div></div><br />        <br />                </div></div>
 </body></html>

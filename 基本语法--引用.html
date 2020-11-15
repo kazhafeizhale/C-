@@ -1,7 +1,7 @@
 <!doctype html><html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>static cast dynamic cast </title>
+  <title>引用</title>
   <meta name="generator" content="CherryTree">
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
@@ -177,5 +177,5 @@
 <ol>
 <li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
 </ol></div>
-<div class="page"><h1><b><u>static cast dynamic cast </u></b></h1>dynamic</div></div>
+<div class="page"><h1><b><u>引用</u></b></h1><h1>函数返回值为引用</h1><br />引用的本质是对<span style="color:#ffa500;">内存区域的地址的封装</span>，有的编译器不能引用寄存区（例如临时变量）。<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">int</span>&nbsp;&amp;temfunc(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;i)<br />{<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;a&nbsp;=&nbsp;i;<br />	<span style="color:#0088ff;font-weight:400">//std::cout&nbsp;&lt;&lt;&nbsp;a&nbsp;&lt;&lt;&nbsp;std::endl;</span><br />	<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;a;<br />}<br /><br /><span style="color:#7f0044;font-weight:400">int</span>&nbsp;main()<br />{<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;&amp;a&nbsp;=&nbsp;temfunc(<span style="color:#ff0044;font-weight:400">10</span>);<br />	temfunc(<span style="color:#ff0044;font-weight:400">11</span>);<br />	std::cout&nbsp;&lt;&lt;&nbsp;a&nbsp;&lt;&lt;&nbsp;std::endl;<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;b&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">20</span>;<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;&amp;c&nbsp;=&nbsp;b;<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;&amp;&nbsp;d&nbsp;=&nbsp;c;<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;&amp;e&nbsp;=&nbsp;d;<br /><br />	e&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">30</span>;<br />	std::cout&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"b:&nbsp;"</span>&nbsp;&lt;&lt;&nbsp;b&nbsp;&lt;&lt;<span style="color:#3ad900;font-weight:400">"&nbsp;c:"</span>&nbsp;&lt;&lt;&nbsp;c&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"d:&nbsp;"</span>&nbsp;&lt;&lt;&nbsp;d&nbsp;&lt;&lt;&nbsp;std::endl;<br />	std::cout&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"b:&nbsp;"</span>&nbsp;&lt;&lt;&nbsp;&amp;b&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"c:&nbsp;"</span>&nbsp;&lt;&lt;&nbsp;&amp;c&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"d:&nbsp;"</span>&nbsp;&lt;&lt;&nbsp;&amp;d&nbsp;&lt;&lt;&nbsp;std::endl;<br />}<br /></div></div><img src="images\92-1.png" alt="images\92-1.png" /></div></div>
 </body></html>

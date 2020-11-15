@@ -9,6 +9,11 @@
 <p><strong>Index</strong></p>
 <p><a href="目录.html">目录</a></p>
 
+<p><a href="其他.html">其他</a></p>
+
+<ol>
+<li><a href="其他--github中创建文章.html">github中创建文章</a></li>
+</ol>
 <p><a href="基本语法.html">基本语法</a></p>
 
 <ol>
@@ -106,6 +111,7 @@
 <ol>
 <li><a href="基本语法--typeid--static_cast_dynamic_cast.html">static cast dynamic cast </a></li>
 </ol>
+<li><a href="基本语法--引用.html">引用</a></li>
 </ol>
 <p><a href="算法.html">算法</a></p>
 
@@ -144,11 +150,11 @@
 <ol>
 <li><a href="window--mfc--编辑框--追加文本.html">追加文本</a></li>
 </ol>
+<li><a href="window--mfc--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
+<li><a href="window--mfc--视图分割.html">视图分割</a></li>
+<li><a href="window--mfc--编码方式.html">编码方式</a></li>
+<li><a href="window--mfc--socket.html">socket</a></li>
 </ol>
-<li><a href="window--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
-<li><a href="window--视图分割.html">视图分割</a></li>
-<li><a href="window--编码方式.html">编码方式</a></li>
-<li><a href="window--socket.html">socket</a></li>
 </ol>
 <p><a href="算法题目.html">算法题目</a></p>
 
@@ -168,6 +174,8 @@
 </ol>
 <p><a href="异常处理.html">异常处理</a></p>
 
-</div>
-<div class="page"><h1><b><u>平衡字符串</u></b></h1>题目描述：<br />在一个「平衡字符串」中，'L' 和 'R' 字符的数量是相同的。<br /><br />给出一个平衡字符串 s，请你将它分割成尽可能多的平衡字符串。<br /><br />返回可以通过分割得到的平衡字符串的最大数量。<br /><br /><div class="codebox"><div class="codebox">示例&nbsp;<span style="color:#ff0044;font-weight:400">1</span>：<br /><br />输入：s&nbsp;=&nbsp;<span style="color:#3ad900;font-weight:400">"RLRRLLRLRL"</span><br />输出：<span style="color:#ff0044;font-weight:400">4</span><br />解释：s&nbsp;可以分割为&nbsp;<span style="color:#3ad900;font-weight:400">"RL"</span>,&nbsp;<span style="color:#3ad900;font-weight:400">"RRLL"</span>,&nbsp;<span style="color:#3ad900;font-weight:400">"RL"</span>,&nbsp;<span style="color:#3ad900;font-weight:400">"RL"</span>,&nbsp;每个子字符串中都包含相同数量的&nbsp;<span style="color:#00117f;font-weight:400">'L'</span>&nbsp;和&nbsp;<span style="color:#00117f;font-weight:400">'R'</span>。</div></div><br /><br />来源：力扣（LeetCode）<br />链接：<a href="https://leetcode-cn.com/problems/split-a-string-in-balanced-strings">https://leetcode-cn.com/problems/split-a-string-in-balanced-strings</a><br />著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">int</span>&nbsp;balancedStringSplit(<span style="color:#7f0044;font-weight:400">char</span>&nbsp;*&nbsp;s){<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;num&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;j&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">for</span>(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;i=<span style="color:#ff0044;font-weight:400">0</span>;i&lt;strlen(s);i++)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">if</span>(s[i]&nbsp;==&nbsp;<span style="color:#00117f;font-weight:400">'R'</span>)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j++;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">else</span><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j--;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">if</span>(j&nbsp;==&nbsp;<span style="color:#ff0044;font-weight:400">0</span>)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num++;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;num;<br />}</div></div></div></div>
+<ol>
+<li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
+</ol></div>
+<div class="page"><h1><b><u>平衡字符串</u></b></h1>题目描述：<br />在一个「平衡字符串」中，'L' 和 'R' 字符的数量是相同的。<br /><br />给出一个平衡字符串 s，请你将它分割成尽可能多的平衡字符串。<br /><br />返回可以通过分割得到的平衡字符串的最大数量。<br /><br /><div class="codebox"><div class="codebox">示例&nbsp;<span style="color:#ff0044;font-weight:400">1</span>：<br /><br />输入：s&nbsp;=&nbsp;<span style="color:#3ad900;font-weight:400">"RLRRLLRLRL"</span><br />输出：<span style="color:#ff0044;font-weight:400">4</span><br />解释：s&nbsp;可以分割为&nbsp;<span style="color:#3ad900;font-weight:400">"RL"</span>,&nbsp;<span style="color:#3ad900;font-weight:400">"RRLL"</span>,&nbsp;<span style="color:#3ad900;font-weight:400">"RL"</span>,&nbsp;<span style="color:#3ad900;font-weight:400">"RL"</span>,&nbsp;每个子字符串中都包含相同数量的&nbsp;<span style="color:#00117f;font-weight:400">'L'</span>&nbsp;和&nbsp;<span style="color:#00117f;font-weight:400">'R'</span>。</div></div><br /><br />链接：<a href="https://leetcode-cn.com/problems/split-a-string-in-balanced-strings">https://leetcode-cn.com/problems/split-a-string-in-balanced-strings</a><br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">int</span>&nbsp;balancedStringSplit(<span style="color:#7f0044;font-weight:400">char</span>&nbsp;*&nbsp;s){<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;num&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;j&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">for</span>(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;i=<span style="color:#ff0044;font-weight:400">0</span>;i&lt;strlen(s);i++)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">if</span>(s[i]&nbsp;==&nbsp;<span style="color:#00117f;font-weight:400">'R'</span>)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j++;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">else</span><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j--;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">if</span>(j&nbsp;==&nbsp;<span style="color:#ff0044;font-weight:400">0</span>)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num++;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;num;<br />}</div></div></div></div>
 </body></html>

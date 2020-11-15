@@ -9,6 +9,11 @@
 <p><strong>Index</strong></p>
 <p><a href="目录.html">目录</a></p>
 
+<p><a href="其他.html">其他</a></p>
+
+<ol>
+<li><a href="其他--github中创建文章.html">github中创建文章</a></li>
+</ol>
 <p><a href="基本语法.html">基本语法</a></p>
 
 <ol>
@@ -106,6 +111,7 @@
 <ol>
 <li><a href="基本语法--typeid--static_cast_dynamic_cast.html">static cast dynamic cast </a></li>
 </ol>
+<li><a href="基本语法--引用.html">引用</a></li>
 </ol>
 <p><a href="算法.html">算法</a></p>
 
@@ -144,11 +150,11 @@
 <ol>
 <li><a href="window--mfc--编辑框--追加文本.html">追加文本</a></li>
 </ol>
+<li><a href="window--mfc--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
+<li><a href="window--mfc--视图分割.html">视图分割</a></li>
+<li><a href="window--mfc--编码方式.html">编码方式</a></li>
+<li><a href="window--mfc--socket.html">socket</a></li>
 </ol>
-<li><a href="window--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
-<li><a href="window--视图分割.html">视图分割</a></li>
-<li><a href="window--编码方式.html">编码方式</a></li>
-<li><a href="window--socket.html">socket</a></li>
 </ol>
 <p><a href="算法题目.html">算法题目</a></p>
 
@@ -168,6 +174,8 @@
 </ol>
 <p><a href="异常处理.html">异常处理</a></p>
 
-</div>
+<ol>
+<li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
+</ol></div>
 <div class="page"><h1><b><u>作用域，链接性</u></b></h1><br />1处定义   -&gt;   多处声明   -&gt;链接到定义<br /><br />作用域表示：声明的位置决定了有效作用区间<br /><br />链接性：表示定义的标识符是否可以被其他声明链接到（内部，外部，无）<br /><br />extern关键字：表示对外部变量的声明。<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">static</span>&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;a;不会生成符号表<br /><span style="color:#7f0044;font-weight:400">int</span>&nbsp;b;如果有extern&nbsp;有链接属性，那么会生成符号表<br />fun()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">extern</span>&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;a;声明变量a&nbsp;首先会找本文件，然后找其他文件<br />}‎<br /><span style="color:#7f0044;font-weight:400">int</span>&nbsp;c=<span style="color:#ff0044;font-weight:400">10</span>;<br /></div></div><br /><br /><br />通过static可以改变默认具有extern变量的链接性为内部链接性<br /><br />只有定义可以初始化赋初值<br /><br /><br />作用域：<br />    代码块作用域<br />    文件作用域<br />    <br />    <br />链接性：<br />    外部链接性<br />    无链接性<br /><br />存储特性：<br />    静态存储<br />    动态存储<br /><br />    <br />全局变量<br />    作用域为文件作用域，<br />    默认具有外部链接性，通过<span style="color:#ff0000;">extern</span>修饰声明可以扩展到另一个文件相应的作用域内。<span style="color:#ff0000;"> static</span>修饰定义，修改为无链接性。<br />    存储特性为静态存储。<br /><br /><br /><br />局部变量<br />    作用域为代码块作用域，<br />    无链接性<br />    存储为动态存储，<span style="color:#ff0000;">static</span> 可以修改为静态存储。<br />    <br />技巧：<br />    首先弄清楚是声明还是定义。定义才是主体，声明只是对主体的一种延伸，扩展。<br />    <br />    下面这种情况：<br />        extern int a; <span style="color:#ff0000;">a.c</span><br />        extern int a; <span style="color:#ff0000;">b.c</span><br />    如果使用，编译器会不知道哪个才是定义。会出错。<br />    因此，最好，定义不要加extern，赋初值。<br />    <br /><br />    </div></div>
 </body></html>

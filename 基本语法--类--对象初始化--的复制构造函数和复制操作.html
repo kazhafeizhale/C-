@@ -9,6 +9,11 @@
 <p><strong>Index</strong></p>
 <p><a href="目录.html">目录</a></p>
 
+<p><a href="其他.html">其他</a></p>
+
+<ol>
+<li><a href="其他--github中创建文章.html">github中创建文章</a></li>
+</ol>
 <p><a href="基本语法.html">基本语法</a></p>
 
 <ol>
@@ -106,6 +111,7 @@
 <ol>
 <li><a href="基本语法--typeid--static_cast_dynamic_cast.html">static cast dynamic cast </a></li>
 </ol>
+<li><a href="基本语法--引用.html">引用</a></li>
 </ol>
 <p><a href="算法.html">算法</a></p>
 
@@ -144,11 +150,11 @@
 <ol>
 <li><a href="window--mfc--编辑框--追加文本.html">追加文本</a></li>
 </ol>
+<li><a href="window--mfc--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
+<li><a href="window--mfc--视图分割.html">视图分割</a></li>
+<li><a href="window--mfc--编码方式.html">编码方式</a></li>
+<li><a href="window--mfc--socket.html">socket</a></li>
 </ol>
-<li><a href="window--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
-<li><a href="window--视图分割.html">视图分割</a></li>
-<li><a href="window--编码方式.html">编码方式</a></li>
-<li><a href="window--socket.html">socket</a></li>
 </ol>
 <p><a href="算法题目.html">算法题目</a></p>
 
@@ -168,6 +174,8 @@
 </ol>
 <p><a href="异常处理.html">异常处理</a></p>
 
-</div>
+<ol>
+<li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
+</ol></div>
 <div class="page"><h1><b><u>的复制构造函数和复制操作</u></b></h1>当一个对象生成或者赋值的时候，会从构造函数里面找有没有符合参数的工作函数，然后复制或者调用赋值构造函数<br /><br /><br />1.<br />显示对用构造函数<br />string a("hetong")<br /><br /><br />2.<br />显示调用构造构造函数构造临时对象，调用复制构造函数复制对象到a<br />string a = string("hetong")<br /><br />3.<br />void func(const string a)<br />func("hetong")<br /><br />调用string构造函数生成临时对象，调用复制构造函数<br /><br />4.<br />void func(const string &amp;a)<br />func("hetong")<br />调用string构造函数生成临时对象，然后引用对象<br /><br />5.<br />对象复制<br />string v1;<br />string v2;<br />v1 = v2;<br /><br /><br />6.<br />string v1;<br />v1 = “hetong”;<br /><br />调用构造函数，然后对象复制</div></div>
 </body></html>

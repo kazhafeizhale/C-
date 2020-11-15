@@ -9,6 +9,11 @@
 <p><strong>Index</strong></p>
 <p><a href="目录.html">目录</a></p>
 
+<p><a href="其他.html">其他</a></p>
+
+<ol>
+<li><a href="其他--github中创建文章.html">github中创建文章</a></li>
+</ol>
 <p><a href="基本语法.html">基本语法</a></p>
 
 <ol>
@@ -106,6 +111,7 @@
 <ol>
 <li><a href="基本语法--typeid--static_cast_dynamic_cast.html">static cast dynamic cast </a></li>
 </ol>
+<li><a href="基本语法--引用.html">引用</a></li>
 </ol>
 <p><a href="算法.html">算法</a></p>
 
@@ -144,11 +150,11 @@
 <ol>
 <li><a href="window--mfc--编辑框--追加文本.html">追加文本</a></li>
 </ol>
+<li><a href="window--mfc--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
+<li><a href="window--mfc--视图分割.html">视图分割</a></li>
+<li><a href="window--mfc--编码方式.html">编码方式</a></li>
+<li><a href="window--mfc--socket.html">socket</a></li>
 </ol>
-<li><a href="window--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
-<li><a href="window--视图分割.html">视图分割</a></li>
-<li><a href="window--编码方式.html">编码方式</a></li>
-<li><a href="window--socket.html">socket</a></li>
 </ol>
 <p><a href="算法题目.html">算法题目</a></p>
 
@@ -168,6 +174,8 @@
 </ol>
 <p><a href="异常处理.html">异常处理</a></p>
 
-</div>
+<ol>
+<li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
+</ol></div>
 <div class="page"><h1><b><u>string</u></b></h1>操作总结：<br />.date() size()<br />&lt; &gt; ==<br />insert()  push_back() pop_back <br />append() +<br /> iterator []<br />erase()<br />replace()<br />find()<br />sort<br /><br />分割：<br />substr()+find实现 或者用c语言 strtok()<br /><a href="https://blog.csdn.net/qq_34634812/article/details/102407308">https://blog.csdn.net/qq_34634812/article/details/102407308</a><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:700">#include&nbsp;&lt;iostream&gt;</span><br /><span style="color:#7f0044;font-weight:700">#include&nbsp;&lt;string.h&gt;</span><br /><br /><span style="color:#ff9d00;font-weight:700">using</span>&nbsp;<span style="color:#ff9d00;font-weight:700">namespace</span>&nbsp;std;<br /><br /><span style="color:#7f0044;font-weight:400">int</span>&nbsp;main()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0088ff;font-weight:400">//char&nbsp;str[]="a,b,c,d";</span><br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0088ff;font-weight:400">//如果输入是string要转成char数组[strcpy(buf,str.c_str())]</span><br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0088ff;font-weight:400">//或者用const_cast转换成char指针</span><br />&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;str=<span style="color:#3ad900;font-weight:400">"a,b,c,d"</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">const</span>&nbsp;<span style="color:#7f0044;font-weight:400">char</span>&nbsp;*delim=<span style="color:#3ad900;font-weight:400">","</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">char</span>&nbsp;*p=strtok(<span style="color:#ff9d00;font-weight:700">const_cast</span>&lt;<span style="color:#7f0044;font-weight:400">char</span>&nbsp;*&gt;(str.c_str()),delim);<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">while</span>(p)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;p&lt;&lt;endl;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p=strtok(<span style="color:#0088ff;font-weight:700">NULL</span>,delim);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;<br />}</div></div><br /><br /><br /> <a href="https://blog.csdn.net/weibo1230123/article/details/80177898">https://blog.csdn.net/weibo1230123/article/details/80177898</a> 讲解strtok()<br /> 网页总结的成员函数<br /><a href="https://blog.csdn.net/qq_37941471/article/details/82107077">https://blog.csdn.net/qq_37941471/article/details/82107077</a><br /><a href="http://c.biancheng.net/view/1441.html">http://c.biancheng.net/view/1441.html</a></div></div>
 </body></html>

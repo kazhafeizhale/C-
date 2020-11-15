@@ -9,6 +9,11 @@
 <p><strong>Index</strong></p>
 <p><a href="目录.html">目录</a></p>
 
+<p><a href="其他.html">其他</a></p>
+
+<ol>
+<li><a href="其他--github中创建文章.html">github中创建文章</a></li>
+</ol>
 <p><a href="基本语法.html">基本语法</a></p>
 
 <ol>
@@ -106,6 +111,7 @@
 <ol>
 <li><a href="基本语法--typeid--static_cast_dynamic_cast.html">static cast dynamic cast </a></li>
 </ol>
+<li><a href="基本语法--引用.html">引用</a></li>
 </ol>
 <p><a href="算法.html">算法</a></p>
 
@@ -144,11 +150,11 @@
 <ol>
 <li><a href="window--mfc--编辑框--追加文本.html">追加文本</a></li>
 </ol>
+<li><a href="window--mfc--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
+<li><a href="window--mfc--视图分割.html">视图分割</a></li>
+<li><a href="window--mfc--编码方式.html">编码方式</a></li>
+<li><a href="window--mfc--socket.html">socket</a></li>
 </ol>
-<li><a href="window--view单文档窗口子窗口.html">view单文档窗口子窗口</a></li>
-<li><a href="window--视图分割.html">视图分割</a></li>
-<li><a href="window--编码方式.html">编码方式</a></li>
-<li><a href="window--socket.html">socket</a></li>
 </ol>
 <p><a href="算法题目.html">算法题目</a></p>
 
@@ -168,6 +174,8 @@
 </ol>
 <p><a href="异常处理.html">异常处理</a></p>
 
-</div>
+<ol>
+<li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
+</ol></div>
 <div class="page"><h1><b><u>异常处理</u></b></h1>1. throw 抛出异常<br />2. try尝试执行<br />3.catch捕获异常<br /><br />throw可以抛出特定类型的异常，try捕获异常后函数退出，catch捕获判断类型然后处理异常<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">int</span>&nbsp;abc(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;a,&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;b,&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;c)<br />{<br />	<span style="color:#ff9d00;font-weight:700">if</span>&nbsp;(a&nbsp;&lt;&nbsp;<span style="color:#ff0044;font-weight:400">0</span>&nbsp;&amp;&amp;&nbsp;b&nbsp;&lt;&nbsp;<span style="color:#ff0044;font-weight:400">0</span>&nbsp;&amp;&amp;&nbsp;c&nbsp;&lt;&nbsp;<span style="color:#ff0044;font-weight:400">0</span>)<br />	{<br />		<span style="color:#ff9d00;font-weight:700">throw</span>&nbsp;<span style="color:#ff0044;font-weight:400">1</span>;<br />	}<br />	<span style="color:#ff9d00;font-weight:700">else</span>&nbsp;<span style="color:#ff9d00;font-weight:700">if</span>&nbsp;(a&nbsp;==&nbsp;<span style="color:#ff0044;font-weight:400">0</span>&nbsp;&amp;&amp;&nbsp;b&nbsp;==&nbsp;<span style="color:#ff0044;font-weight:400">0</span>&nbsp;&amp;&amp;&nbsp;c&nbsp;==&nbsp;<span style="color:#ff0044;font-weight:400">0</span>)<br />	{<br />		<span style="color:#ff9d00;font-weight:700">throw</span>&nbsp;<span style="color:#ff0044;font-weight:400">2</span>;<br />	}<br />	<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;&nbsp;a&nbsp;+&nbsp;b&nbsp;*&nbsp;c;<br />}<br /><br /><span style="color:#7f0044;font-weight:400">int</span>&nbsp;main()<br />{<br />	<span style="color:#ff9d00;font-weight:700">try</span>&nbsp;{&nbsp;abc(<span style="color:#ff0044;font-weight:400">0</span>,&nbsp;<span style="color:#ff0044;font-weight:400">0</span>,&nbsp;<span style="color:#ff0044;font-weight:400">0</span>);&nbsp;}<br />	<span style="color:#ff9d00;font-weight:700">catch</span>&nbsp;(<span style="color:#7f0044;font-weight:400">char</span>&nbsp;*e)<br />	{<br />		std::cout&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"catch&nbsp;exception&nbsp;is"</span>&nbsp;&lt;&lt;&nbsp;e&nbsp;&lt;&lt;&nbsp;std::endl;<br />	}<br />	<span style="color:#ff9d00;font-weight:700">catch</span>&nbsp;(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;e)<br />	{<br />		std::cout&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"catch&nbsp;exception&nbsp;is"</span>&nbsp;&lt;&lt;&nbsp;e&nbsp;&lt;&lt;&nbsp;std::endl;<br />	}<br />	<span style="color:#ff9d00;font-weight:700">catch</span>&nbsp;(...)<br />	{<br />		std::cout&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"catch&nbsp;some&nbsp;exception"</span>&nbsp;&lt;&lt;&nbsp;std::endl;<br />	}<br />}<br /></div></div><br /><br /></div></div>
 </body></html>
