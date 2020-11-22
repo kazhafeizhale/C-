@@ -1,7 +1,7 @@
 <!doctype html><html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>c++</title>
+  <title>程序编译通过运行时找不到库</title>
   <meta name="generator" content="CherryTree">
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
@@ -189,5 +189,5 @@
 <ol>
 <li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
 </ol></div>
-<div class="page"><h1><b><u>c++</u></b></h1><br />&lt;sstream&gt;<br />&lt;iostream&gt;<br />&lt;fstream&gt;<br /><br />&lt;string&gt;<br />stoi stol stod ...   (atoi  atol  atod)<br />to_string ( itoa  itoa不是一个标准的c函数，他是windows特有的，跨平台写程序，要用sprintf。)<br />get_line   (gets)<br /><br />.c_str<br /><br />stringstream  (类似于sprintf sscanf )<br /><br /><br /></div></div>
+<div class="page"><h1><b><u>程序编译通过运行时找不到库</u></b></h1><a href="https://blog.csdn.net/guotianqing/article/details/106804065">https://blog.csdn.net/guotianqing/article/details/106804065</a><br /><br /><br /><br />通过修改  LD_LIBRARY_PATH 变量<br />• ~/.bashrc<br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">export</span>&nbsp;LD_LIBRARY_PATH&nbsp;=&nbsp;-path:LD_LIBRARY_PATH</div></div><br />• 终端输入<span style="color:#7f0044;">export</span> LD_LIBRARY_PATH = -path:LD_LIBRARY_PATH<br /><br /></div></div>
 </body></html>

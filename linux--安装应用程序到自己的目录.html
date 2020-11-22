@@ -1,7 +1,7 @@
 <!doctype html><html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>c++</title>
+  <title>安装应用程序到自己的目录</title>
   <meta name="generator" content="CherryTree">
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
@@ -189,5 +189,5 @@
 <ol>
 <li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
 </ol></div>
-<div class="page"><h1><b><u>c++</u></b></h1><br />&lt;sstream&gt;<br />&lt;iostream&gt;<br />&lt;fstream&gt;<br /><br />&lt;string&gt;<br />stoi stol stod ...   (atoi  atol  atod)<br />to_string ( itoa  itoa不是一个标准的c函数，他是windows特有的，跨平台写程序，要用sprintf。)<br />get_line   (gets)<br /><br />.c_str<br /><br />stringstream  (类似于sprintf sscanf )<br /><br /><br /></div></div>
+<div class="page"><h1><b><u>安装应用程序到自己的目录</u></b></h1><a href="https://blog.csdn.net/chen134225/article/details/103129291">https://blog.csdn.net/chen134225/article/details/103129291</a><br /><br />makefile<br /><img src="images\96-1.png" alt="images\96-1.png" /><br />或者<br /><code>cd </code><code><span style="color:#67cdcc;">/</span></code><code>user</code><code><span style="color:#67cdcc;">/</span></code><code>bin</code><code><span style="color:#67cdcc;">/</span></code><code>cmake</code><code><span style="color:#67cdcc;">-</span></code><code><span style="color:#f08d49;">3.8</span></code><code><span style="color:#67cdcc;">/</span></code><code>cmake</code><code><span style="color:#67cdcc;">-</span></code><code><span style="color:#f08d49;">3.8.2</span></code><code><br /></code><code><span style="color:#333333;">.</span></code><code><span style="color:#67cdcc;">/</span></code><code>bootstrap </code><code><span style="color:#67cdcc;">--</span></code><code>prefix</code><code><span style="color:#67cdcc;">=/</span></code><code>user</code><code><span style="color:#67cdcc;">/</span></code><code>bin</code><code><span style="color:#67cdcc;">/</span></code><code>cmake</code><code><span style="color:#67cdcc;">-</span></code><code><span style="color:#f08d49;">3.8</span></code><code><span style="color:#67cdcc;">/</span></code><code>cmake</code><code><span style="color:#67cdcc;">-</span></code><code><span style="color:#f08d49;">3.8.2</span></code><code><br /></code><code><span style="color:#336632;">make</span></code><code><br /></code><code><span style="color:#336632;">make</span></code><code> install</code><br /><br /><br /><br /><br />cmake<br />1. SET(CMAKE_INSTALL_PREFIX _install_path)<br />2. make<br />3. make install</div></div>
 </body></html>

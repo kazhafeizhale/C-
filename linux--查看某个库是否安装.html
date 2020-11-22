@@ -1,7 +1,7 @@
 <!doctype html><html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>c++</title>
+  <title>查看某个库是否安装</title>
   <meta name="generator" content="CherryTree">
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
@@ -189,5 +189,5 @@
 <ol>
 <li><a href="异常处理--C++_-_hello_world_my_name_is_hetong.html">C++ - hello world my name is hetong</a></li>
 </ol></div>
-<div class="page"><h1><b><u>c++</u></b></h1><br />&lt;sstream&gt;<br />&lt;iostream&gt;<br />&lt;fstream&gt;<br /><br />&lt;string&gt;<br />stoi stol stod ...   (atoi  atol  atod)<br />to_string ( itoa  itoa不是一个标准的c函数，他是windows特有的，跨平台写程序，要用sprintf。)<br />get_line   (gets)<br /><br />.c_str<br /><br />stringstream  (类似于sprintf sscanf )<br /><br /><br /></div></div>
+<div class="page"><h1><b><u>查看某个库是否安装</u></b></h1>$ ldconfig -p | grep <span style="color:#ff0000;">pcap</span><br />说明：<br />ldconfig -p:打印当前缓存所保存的所有库的名字。<br />grep pcap:用管道符解析libpcap.so是否已加入缓存中。<br /><br /><br /><br />“ldconfig主要是在默认搜寻目录<span style="background-color:#cccccc;">/lib</span>和<span style="background-color:#cccccc;">/usr/lib</span>以及动态库配置文件/etc/ld.so.conf内所列的目录下，搜索出可共享的动态链接库（格式如lib*.so*）,进而创建出动态装入程序(ld.so)所需的连接和缓存文件。缓存文件默认为/etc/ld.so.cache，此文件保存已排好序的动态链接库名字列表，为了让动态链接库为系统所共享，需运行动态链接库的管理命令ldconfig，此执行程序存放在/sbin目录下<span style="color:#2d374b;">。”</span><br /></div></div>
 </body></html>
