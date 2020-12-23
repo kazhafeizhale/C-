@@ -1,7 +1,7 @@
 <!doctype html><html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>boost</title>
+  <title>文件读写</title>
   <meta name="generator" content="CherryTree">
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
@@ -203,5 +203,5 @@
 <li><a href="其他--github中创建文章.html">github中创建文章</a></li>
 <li><a href="其他--计时函数.html">计时函数</a></li>
 </ol></div>
-<div class="page"><h1><b><u>boost</u></b></h1></div></div>
+<div class="page"><h1><b><u>文件读写</u></b></h1><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">bool</span>&nbsp;IPSPCFG::save_config(Json::Value&nbsp;new_config)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;rtn&nbsp;=&nbsp;OK;<br />&nbsp;&nbsp;&nbsp;&nbsp;FILE&nbsp;*fp&nbsp;=&nbsp;<span style="color:#0088ff;font-weight:700">NULL</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0088ff;font-weight:400">//fstream&nbsp;m_fstream(m_config_path,&nbsp;ios::in&nbsp;&nbsp;|&nbsp;ios::app);//创建读取追加</span><br />&nbsp;&nbsp;&nbsp;&nbsp;fstream&nbsp;m_fstream(m_config_path,&nbsp;ios::in&nbsp;&nbsp;|&nbsp;ios::out&nbsp;|&nbsp;ios::trunc);&nbsp;<span style="color:#0088ff;font-weight:400">//创建读取覆盖</span><br />&nbsp;&nbsp;&nbsp;&nbsp;Json::StyledWriter&nbsp;writer;<br />&nbsp;&nbsp;&nbsp;&nbsp;m_fstream&nbsp;&lt;&lt;&nbsp;writer.write(new_config);<br />&nbsp;&nbsp;&nbsp;&nbsp;m_fstream.close();<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;<span style="color:#ff9d00;font-weight:700">true</span>;<br />}<br /></div></div></div></div>
 </body></html>
