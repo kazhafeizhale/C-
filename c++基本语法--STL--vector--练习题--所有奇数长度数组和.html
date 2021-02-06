@@ -1,7 +1,7 @@
 <!doctype html><html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>指针</title>
+  <title>所有奇数长度数组和</title>
   <meta name="generator" content="CherryTree">
   <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
@@ -215,5 +215,5 @@
 <li><a href="其他--github中创建文章.html">github中创建文章</a></li>
 <li><a href="其他--计时函数.html">计时函数</a></li>
 </ol></div>
-<div class="page"><h1><b><u>指针</u></b></h1>练习：<br /></div></div>
+<div class="page"><h1><b><u>所有奇数长度数组和</u></b></h1>给你一个正整数数组 arr ，请你计算所有可能的奇数长度子数组的和。<br /><br />子数组 定义为原数组中的一个连续子序列。<br /><br />请你返回 arr 中 所有奇数长度子数组的和 。<br /><br /> <br /><br />示例 1：<br /><br />输入：arr = [1,4,2,5,3]<br />输出：58<br />解释：所有奇数长度子数组和它们的和为：<br />[1] = 1<br />[4] = 4<br />[2] = 2<br />[5] = 5<br />[3] = 3<br />[1,4,2] = 7<br />[4,2,5] = 11<br />[2,5,3] = 10<br />[1,4,2,5,3] = 15<br />我们将所有值求和得到 1 + 4 + 2 + 5 + 3 + 7 + 11 + 10 + 15 = 58<br />示例 2：<br /><br />输入：arr = [1,2]<br />输出：3<br />解释：总共只有 2 个长度为奇数的子数组，[1] 和 [2]。它们的和为 3 。<br />示例 3：<br /><br />输入：arr = [10,11,12]<br />输出：66<br /><br />来源：力扣（LeetCode）<br />链接：<a href="https://leetcode-cn.com/problems/sum-of-all-odd-length-subarrays">https://leetcode-cn.com/problems/sum-of-all-odd-length-subarrays</a><br /><div class="codebox"><div class="codebox"><span style="color:#0088ff;font-weight:400">//奇数子数组</span><br /><span style="color:#7f0044;font-weight:400">int</span>&nbsp;sumOddLengthSubarrays(vector&lt;<span style="color:#7f0044;font-weight:400">int</span>&gt;&amp;&nbsp;arr)&nbsp;<br />{<br />	<span style="color:#7f0044;font-weight:400">int</span>&nbsp;sum&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;<br />	<span style="color:#ff9d00;font-weight:700">for</span>&nbsp;(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;i&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">1</span>;&nbsp;i&nbsp;&lt;=&nbsp;arr.size();&nbsp;i&nbsp;+=&nbsp;<span style="color:#ff0044;font-weight:400">2</span>)<br />	{<br />		<span style="color:#ff9d00;font-weight:700">for</span>&nbsp;(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;j&nbsp;=&nbsp;<span style="color:#ff0044;font-weight:400">0</span>;&nbsp;j&nbsp;&lt;&nbsp;arr.size()&nbsp;-&nbsp;i&nbsp;+&nbsp;<span style="color:#ff0044;font-weight:400">1</span>;&nbsp;j++)<br />		{<br />			<span style="color:#ff9d00;font-weight:700">for</span>&nbsp;(<span style="color:#7f0044;font-weight:400">int</span>&nbsp;k&nbsp;=&nbsp;j;&nbsp;k&nbsp;&lt;&nbsp;j&nbsp;+&nbsp;i;&nbsp;k++)<br />			{<br />				sum&nbsp;+=&nbsp;arr[k];<br />			}<br />		}<br />	}<br />	<span style="color:#ff9d00;font-weight:700">return</span>&nbsp;sum;<br />}</div></div></div></div>
 </body></html>
