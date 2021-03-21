@@ -38,6 +38,16 @@
 <li><a href="c++基本语法--数据--抽象数据类型--链表--双向链表.html">双向链表</a></li>
 </ol>
 </ol>
+<li><a href="c++基本语法--数据--机制.html">机制</a></li>
+<ol>
+<li><a href="c++基本语法--数据--机制--内存模型和名称空间.html">内存模型和名称空间</a></li>
+<li><a href="c++基本语法--数据--机制--作用域，链接性.html">作用域，链接性</a></li>
+<ol>
+<li><a href="c++基本语法--数据--机制--作用域，链接性--声明和定义.html">声明和定义</a></li>
+</ol>
+<li><a href="c++基本语法--数据--机制--引用.html">引用</a></li>
+<li><a href="c++基本语法--数据--机制--类型转换.html">类型转换</a></li>
+</ol>
 </ol>
 <li><a href="c++基本语法--操作符和表达式.html">操作符和表达式</a></li>
 <li><a href="c++基本语法--字符串.html">字符串</a></li>
@@ -45,15 +55,6 @@
 <ol>
 <li><a href="c++基本语法--动态内存分配--calloc和malloc函数.html">calloc和malloc函数</a></li>
 <li><a href="c++基本语法--动态内存分配--new_delete.html">new_delete</a></li>
-</ol>
-<li><a href="c++基本语法--机制.html">机制</a></li>
-<ol>
-<li><a href="c++基本语法--机制--内存模型和名称空间.html">内存模型和名称空间</a></li>
-<li><a href="c++基本语法--机制--作用域，链接性.html">作用域，链接性</a></li>
-<ol>
-<li><a href="c++基本语法--机制--作用域，链接性--声明和定义.html">声明和定义</a></li>
-</ol>
-<li><a href="c++基本语法--机制--引用.html">引用</a></li>
 </ol>
 <li><a href="c++基本语法--函数.html">函数</a></li>
 <ol>
@@ -130,6 +131,23 @@
 <li><a href="c++基本语法--demo--jsoncpp作为配置文件.html">jsoncpp作为配置文件</a></li>
 <li><a href="c++基本语法--demo--windows剪切板操作.html">windows剪切板操作</a></li>
 </ol>
+</ol>
+<p><a href="QT.html">QT</a></p>
+
+<ol>
+<li><a href="QT--QPainter.html">QPainter</a></li>
+<li><a href="QT--QTreeWidget.html">QTreeWidget</a></li>
+<li><a href="QT--combox带搜索.html">combox带搜索</a></li>
+<li><a href="QT--QString.html">QString</a></li>
+<li><a href="QT--简介.html">简介</a></li>
+<ol>
+<li><a href="QT--简介--安装.html">安装</a></li>
+<li><a href="QT--简介--概念.html">概念</a></li>
+<li><a href="QT--简介--string_和_qstring_转换.html">string 和 qstring 转换</a></li>
+<li><a href="QT--简介--命令规范&快捷键.html">命令规范&快捷键</a></li>
+<li><a href="QT--简介--简单的按钮&槽连接.html">简单的按钮&槽连接</a></li>
+</ol>
+<li><a href="QT--QCustomPlot.html">QCustomPlot</a></li>
 </ol>
 <p><a href="linux.html">linux</a></p>
 
@@ -215,5 +233,5 @@
 <li><a href="其他--github中创建文章.html">github中创建文章</a></li>
 <li><a href="其他--计时函数.html">计时函数</a></li>
 </ol></div>
-<div class="page"><h1><b><u>string</u></b></h1>string类的语法和平常的算术运算很像<br />创建对象： string name;<br />getline(cin,str)来从键盘输入值；<br />用“+”来拼接，用==来比较。</div></div>
+<div class="page"><h1><b><u>string</u></b></h1>string类的语法和平常的算术运算很像<br />创建对象： string name;<br />getline(cin,str)来从键盘输入值；<br />用“+”来拼接，用==来比较。<br /><br />&lt;sstream&gt;<br />&lt;iostream&gt;<br />&lt;fstream&gt;<br /><br />&lt;string&gt;<br />stoi stol stod ...   (c语言 atoi  atol  atod  strtof strtoi strtod)<br />to_string ( itoa  itoa不是一个标准的c函数，他是windows特有的，跨平台写程序，要用sprintf。)<br />get_line   (gets)<br /><br />.c_str<br />stringstream  (类似于sprintf sscanf)<br /><br /><br /><div class="codebox"><div class="codebox">	stringstream&nbsp;ss;<br />	<span style="color:#7f0044;font-weight:400">double</span>&nbsp;a,&nbsp;b;<br />	ss&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"10"</span>&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"&nbsp;"</span>&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"30"</span>;<br />	ss&nbsp;&gt;&gt;&nbsp;a&nbsp;&gt;&gt;&nbsp;b;<br />	cout&nbsp;&lt;&lt;&nbsp;a&nbsp;&lt;&lt;&nbsp;<span style="color:#3ad900;font-weight:400">"&nbsp;"</span>&nbsp;&lt;&lt;&nbsp;b&nbsp;&lt;&lt;&nbsp;endl;<br /></div></div></div></div>
 </body></html>
