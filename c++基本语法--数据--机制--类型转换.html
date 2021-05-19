@@ -133,6 +133,23 @@
 <li><a href="c++基本语法--demo--cjsonobject创建二维数组.html">cjsonobject创建二维数组</a></li>
 </ol>
 </ol>
+<p><a href="做题.html">做题</a></p>
+
+<ol>
+<li><a href="做题--leedcode.html">leedcode</a></li>
+<ol>
+<li><a href="做题--leedcode--vector.html">vector</a></li>
+</ol>
+<li><a href="做题--面试题.html">面试题</a></li>
+<ol>
+<li><a href="做题--面试题--1.html">1</a></li>
+</ol>
+</ol>
+<p><a href="开源项目阅读.html">开源项目阅读</a></p>
+
+<ol>
+<li><a href="开源项目阅读--c++.html">c++</a></li>
+</ol>
 <p><a href="设计模式.html">设计模式</a></p>
 
 <ol>
@@ -208,7 +225,7 @@
 <p><a href="算法.html">算法</a></p>
 
 <ol>
-<li><a href="算法--双线性差值算法.html">双线性差值算法</a></li>
+<li><a href="算法--双线性插值算法.html">双线性插值算法</a></li>
 <li><a href="算法--平衡字符串.html">平衡字符串</a></li>
 </ol>
 <p><a href="多线程pthread.html">多线程pthread</a></p>
@@ -236,6 +253,7 @@
 <ol>
 <li><a href="工具--jsoncpp--安装.html">安装</a></li>
 </ol>
+<li><a href="工具--nlohmann.html">nlohmann</a></li>
 </ol>
 <p><a href="mathematica.html">mathematica</a></p>
 
@@ -248,5 +266,5 @@
 <li><a href="其他--github中创建文章.html">github中创建文章</a></li>
 <li><a href="其他--计时函数.html">计时函数</a></li>
 </ol></div>
-<div class="page"><h1><b><u>类型转换</u></b></h1><span style="color:#ff0000;">• unsigned char转unsigned int</span><br />类型相同，内存一致<br /><span style="color:#ff0000;">• unsigned char 转 int</span><br />类型相同，内存一致<br /><span style="color:#ff0000;">• char 转 unsigned int</span><br />如果是0x80 后面的值，int 的值异常，高位补零<br /><span style="color:#ff0000;">• char 转 int</span><br />如果是0x80 后面的值，int 的值异常，高位补零<br /><span style="color:#ff0000;">• int 转 char</span><br />取最后一个字节</div></div>
+<div class="page"><h1><b><u>类型转换</u></b></h1><a href="https://blog.csdn.net/simple_the_best/article/details/48421279">https://blog.csdn.net/simple_the_best/article/details/48421279</a><br /><span style="color:#ff0000;">• unsigned char转unsigned int</span><br />类型相同，内存一致<br /><span style="color:#ff0000;">• unsigned char 转 int</span><br />类型相同，内存一致<br /><span style="color:#ff0000;">• char 转 unsigned int</span><br />如果是0x80 后面的值，int 的值异常，高位补零<br /><span style="color:#ff0000;">• char 转 int</span><br />如果是0x80 后面的值，int 的值异常，高位补零<br /><span style="color:#ff0000;">• int 转 char</span><br />取最后一个字节<br /><br />总结：<br />同等大小数据类型转换，数据内存直接拷贝，数值通过类型来解释<br />不同大小数据类型转换，大转小，截断，小转大，低位拷贝，高位补小的符号f或者0<br /><br />char a = 0x10;  内存bit之为0x10<br />char a = 10; 真值时10</div></div>
 </body></html>

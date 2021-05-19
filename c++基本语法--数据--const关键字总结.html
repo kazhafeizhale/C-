@@ -133,6 +133,23 @@
 <li><a href="c++基本语法--demo--cjsonobject创建二维数组.html">cjsonobject创建二维数组</a></li>
 </ol>
 </ol>
+<p><a href="做题.html">做题</a></p>
+
+<ol>
+<li><a href="做题--leedcode.html">leedcode</a></li>
+<ol>
+<li><a href="做题--leedcode--vector.html">vector</a></li>
+</ol>
+<li><a href="做题--面试题.html">面试题</a></li>
+<ol>
+<li><a href="做题--面试题--1.html">1</a></li>
+</ol>
+</ol>
+<p><a href="开源项目阅读.html">开源项目阅读</a></p>
+
+<ol>
+<li><a href="开源项目阅读--c++.html">c++</a></li>
+</ol>
 <p><a href="设计模式.html">设计模式</a></p>
 
 <ol>
@@ -208,7 +225,7 @@
 <p><a href="算法.html">算法</a></p>
 
 <ol>
-<li><a href="算法--双线性差值算法.html">双线性差值算法</a></li>
+<li><a href="算法--双线性插值算法.html">双线性插值算法</a></li>
 <li><a href="算法--平衡字符串.html">平衡字符串</a></li>
 </ol>
 <p><a href="多线程pthread.html">多线程pthread</a></p>
@@ -236,6 +253,7 @@
 <ol>
 <li><a href="工具--jsoncpp--安装.html">安装</a></li>
 </ol>
+<li><a href="工具--nlohmann.html">nlohmann</a></li>
 </ol>
 <p><a href="mathematica.html">mathematica</a></p>
 
@@ -248,5 +266,5 @@
 <li><a href="其他--github中创建文章.html">github中创建文章</a></li>
 <li><a href="其他--计时函数.html">计时函数</a></li>
 </ol></div>
-<div class="page"><h1><b><u>const关键字总结</u></b></h1><a name="h2-1"></a><h2>注意点：</h2><br />    • 定义时必须初始化<br />    • 默认为文件作用域，必须显示定义extern才能使用<br /> --------------------------------------------------------------------------------<br /><br /><a name="h2-2"></a><h2>语法</h2><br /> <div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">const</span>&nbsp;type&nbsp;<span style="color:#7f0044;font-weight:400">const</span>&nbsp;a;</div></div><br />第一个const对象为type a,第二个const对象为a<br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">const</span>&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;*&nbsp;<span style="color:#7f0044;font-weight:400">const</span>&nbsp;a;</div></div><br />第一个const：*a,*a为一个常量，通过a来访问的是个常量<br />第二个const : a为一个指针常量，只能指向固定的内存区域。<br /><br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">const</span>&nbsp;function(<span style="color:#7f0044;font-weight:400">const</span>&nbsp;va)</div></div><br />const来限定函数<br /><br /><div class="codebox"><div class="codebox">function()&nbsp;<span style="color:#7f0044;font-weight:400">const</span>&nbsp;&nbsp;</div></div><br />对象的常量<br />                      <br /><a name="h2-3"></a><h2>总结：        </h2><br />•  一旦引用已经定义, 它就不能再指向其他的对象 <br />• 非 const 引用只能绑定到与该引用同类型的对象。 <br />• const 引用则可以绑定到不同但相关的类型的对象或绑定到右值。<br /><br /><br /><br />例子：</div></div>
+<div class="page"><h1><b><u>const关键字总结</u></b></h1><a name="h2-1"></a><h2>注意点：</h2><br />    • 定义时必须初始化<br />    • 默认为文件作用域，必须显示定义extern才能使用<br /> --------------------------------------------------------------------------------<br /><br /><a name="h2-2"></a><h2>语法</h2><br /> <div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">const</span>&nbsp;type&nbsp;<span style="color:#7f0044;font-weight:400">const</span>&nbsp;a;</div></div><br />第一个const对象为type a,第二个const对象为a<br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">const</span>&nbsp;<span style="color:#7f0044;font-weight:400">int</span>&nbsp;*&nbsp;<span style="color:#7f0044;font-weight:400">const</span>&nbsp;a;</div></div><br />第一个const：*a,*a为一个常量，通过a来访问的是个常量<br />第二个const : a为一个指针常量，只能指向固定的内存区域。<br /><br /><br /><div class="codebox"><div class="codebox"><span style="color:#7f0044;font-weight:400">const</span>&nbsp;function(<span style="color:#7f0044;font-weight:400">const</span>&nbsp;va)</div></div><br />const来限定函数<br /><br />const类成员变量<br />只能列表初始化<br /><br />static const 成员变量<br />属于类<br />需要在类外边初始化<br /><br /><br /><br /><div class="codebox"><div class="codebox">function()&nbsp;<span style="color:#7f0044;font-weight:400">const</span>&nbsp;&nbsp;</div></div><br />对象的常量<br />                      <br /><a name="h2-3"></a><h2>总结：        </h2><br />•  一旦引用已经定义, 它就不能再指向其他的对象 <br />• 非 const 引用只能绑定到与该引用同类型的对象。 <br />• const 引用则可以绑定到不同但相关的类型的对象或绑定到右值。<br /><br /><br /><br />例子：</div></div>
 </body></html>
